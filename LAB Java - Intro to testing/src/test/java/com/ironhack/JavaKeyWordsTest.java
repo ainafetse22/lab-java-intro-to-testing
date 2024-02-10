@@ -106,7 +106,7 @@ public class JavaKeyWordsTest {
         }
     }
     @Test
-    @DisplayName("Test Case Sensitive")
+    @DisplayName("Test No Case Sensitive")
     public void testCaseInsensitive(){
         List<String> test_string=new ArrayList<String>(){{
             add("BREAK");
@@ -123,9 +123,9 @@ public class JavaKeyWordsTest {
     @DisplayName("Test Special Chars")
     public void testContainsSpecialChars(){
         List<String> test_string=new ArrayList<String>(){{
-            add("BREAK!");
-            add("All Synchronized**");
-            add("?boolea");
+            add("abstract!");
+            add("All continue**");
+            add("?boolean");
         }};
 
         for(String str_test:test_string) {
