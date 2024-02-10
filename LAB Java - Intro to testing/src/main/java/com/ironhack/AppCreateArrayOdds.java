@@ -1,14 +1,11 @@
 package com.ironhack;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class AppCreateArrayOdds
 {
     public static int[] createArrayOdds( int n )
     {

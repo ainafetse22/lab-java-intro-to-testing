@@ -29,7 +29,7 @@ public class CreateArrayOddsTest
 
        for(int[] output_array: Output) {
            for(int input_element:input){
-               Arrays.equals(output_array,App.createArrayOdds(input_element));
+               Arrays.equals(output_array, AppCreateArrayOdds.createArrayOdds(input_element));
            }
        }
    }
@@ -45,7 +45,7 @@ public class CreateArrayOddsTest
 
        for(int[] output_array: Output) {
            for(int input_element:input){
-               Arrays.equals(output_array,App.createArrayOdds(input_element));
+               Arrays.equals(output_array, AppCreateArrayOdds.createArrayOdds(input_element));
            }
        }
    }
@@ -63,7 +63,7 @@ public class CreateArrayOddsTest
 
         for(int[] output_array: Output) {
             for(int input_element:input){
-                int[] output_list =App.createArrayOdds(input_element);
+                int[] output_list = AppCreateArrayOdds.createArrayOdds(input_element);
                 Arrays.equals(output_array,output_list);
             }
         }
@@ -76,7 +76,7 @@ public class CreateArrayOddsTest
         int[] input_list={7,3,12,20,2};
 
             for(int input:input_list){
-                int[] output =App.createArrayOdds(input);
+                int[] output = AppCreateArrayOdds.createArrayOdds(input);
                 for(int element:output){
                     assertTrue(element %2 !=0);
 
@@ -87,7 +87,7 @@ public class CreateArrayOddsTest
     @Test
     @DisplayName("The test return always an array")
     public void testReturnAndArrayType(){
-        assertInstanceOf(int[].class, App.createArrayOdds(56));
+        assertInstanceOf(int[].class, AppCreateArrayOdds.createArrayOdds(56));
     }
 
 
